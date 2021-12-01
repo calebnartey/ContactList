@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.example.javafxhello.datamodel.Contact?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane fx:id="mainBorderPane" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.javafxhello.Controller">
+    <top>
+        <MenuBar>
+            <Menu text="Contacts">
+                <items>
+                    <MenuItem text="Add Contact..." onAction="#showNewItemDialog"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Edit Contact..."/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Delete Contact..."/>
+                </items>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <TableView fx:id="contactTableView">
+            <columns>
+                <TableColumn fx:id="firstNameDescrip" text="First Name" prefWidth="150.0">
+                </TableColumn>
+                <TableColumn fx:id="lastNameDescrip" text="Last Name" prefWidth="150.0">
+                </TableColumn>
+                <TableColumn fx:id="phoneNumberText" text="Phone Number" prefWidth="150.0">
+                </TableColumn>
+                <TableColumn fx:id="notesDescrip" text="Notes" prefWidth="150.0">
+                </TableColumn>
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
