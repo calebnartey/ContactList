@@ -11,9 +11,9 @@
                 <items>
                     <MenuItem text="Add Contact..." onAction="#showNewItemDialog"/>
                     <SeparatorMenuItem/>
-                    <MenuItem text="Edit Contact..."/>
+                    <MenuItem text="Edit Contact..." onAction="#editItemDialog"/>
                     <SeparatorMenuItem/>
-                    <MenuItem text="Delete Contact..."/>
+                    <MenuItem text="Delete Contact..." onAction="#deleteSelectedContact"/>
                 </items>
             </Menu>
         </MenuBar>
